@@ -33,3 +33,5 @@ Terminal output escapes line endings/control characters and truncates individual
 CLI exits 0 for comparison-equal, 1 for differences, 2 for errors. Interactive mode returns to the menu after a result. Root marker/version files opt in to store integration. The current public-only Pi App Store cannot discover private repositories; authenticated store support is not verified.
 
 18 tests cover line-ending differences, final newline, exact ranges, optional whitespace handling, Unicode, FIFO/binary rejection, source preservation, overwrite refusal and CLI status. Linux tested; real Pi/non-Linux platforms untested.
+
+Fullscreen update: Store interactive launch uses terminal-sized board cells or wrapped full-terminal utility input/results with PgUp/PgDn scrolling. Original core rules and direct CLI commands remain unchanged. Ctrl+C cancels utility entry, result Enter returns; no new dependency downloads. Linux PTY resize/restoration checked; physical Pi untested.
